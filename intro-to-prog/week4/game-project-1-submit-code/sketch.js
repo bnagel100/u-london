@@ -43,7 +43,7 @@ function draw()
 
 	noStroke();
 	fill(255);
-	text("cloud", 200, 100);
+//	text("cloud", 200, 100);
 
     ellipse(200,150,80,80)
     ellipse(160,150,60,60)
@@ -62,7 +62,7 @@ function draw()
 
     noStroke();
 	fill(255);
-	text("mountain", 500, 256);
+//	text("mountain", 500, 256);
 
 	//3. a tree
 	//... add your code here
@@ -77,7 +77,7 @@ function draw()
 
 	noStroke();
 	fill(255);
-	text("tree", 800, 346);
+//	text("tree", 800, 346);
 
 
 	//4. a canyon
@@ -87,10 +87,35 @@ function draw()
 
 	noStroke();
 	fill(255);
-	text("canyon", 100, 480);
+	// text("canyon", 100, 480);
+
+    //canyon dark green
+    stroke(0,120,0);
+    strokeWeight(50);
+    line(100,432,150,476);
+    line(150,476,200,476);
+    line(200,476,300,576);
+
+    //canyon dark brown
+    stroke(120,70,40);
+    strokeWeight(35);
+    line(100,432,150,476);
+    line(150,476,200,476);
+    line(200,476,300,576);
 
 
-    fill(120,130,40)
+    //canyon middle brown
+    stroke(120,90,40);
+    strokeWeight(20);
+    line(100,432,150,476);
+    line(150,476,200,476);
+    line(200,476,300,576);
+
+
+    noStroke();
+    fill(100,155,255)
+    rect(70,402,80,30)
+  /* fill(120,130,40)
     rect(100,432,60,150)
 
     fill(120,90,40)
@@ -107,7 +132,7 @@ function draw()
     rect(140,432,10,150)
 
     fill(120,105,40)
-    rect(140,432,10,150)
+    rect(140,432,10,150) */
 	//5. a collectable token - eg. a jewel, fruit, coins
 	//... add your code here
 
